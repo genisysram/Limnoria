@@ -62,3 +62,11 @@ matrix:
     - python: "nightly"
       env: WITH_OPT_DEPS=true
       dist: xenial
+    - python: "3.4"
+      env: WITH_OPT_DEPS=false
+      dist: trusty
+      arch: ppc64le
+    - python: "3.7"
+      env: WITH_OPT_DEPS=true
+      dist: xenial  
+      arch: ppc64le
