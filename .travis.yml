@@ -43,6 +43,20 @@ matrix:
     - python: "pypy3"
       env: WITH_OPT_DEPS=true
       dist: xenial
+#adding code to run on power systems   
+    - python: "3.5"
+      env: WITH_OPT_DEPS=false
+      dist: trusty
+      arch: ppc64le
+    - python: "3.6"
+      env: WITH_OPT_DEPS=true
+      dist: trusty
+      arch: ppc64le
+    - python: "3.7"
+      env: WITH_OPT_DEPS=false
+      dist: xenial
+      arch: ppc64le      
+      
 
 #  allow_failures:
     - python: "nightly"
