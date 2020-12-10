@@ -56,12 +56,13 @@ matrix:
       env: WITH_OPT_DEPS=false
       dist: xenial
       arch: ppc64le      
-      
-
 #  allow_failures:
     - python: "nightly"
       env: WITH_OPT_DEPS=true
       dist: xenial
+#failing in power system because of know issues
+jobs: 
+  exclude:
     - python: "3.4"
       env: WITH_OPT_DEPS=false
       dist: trusty
